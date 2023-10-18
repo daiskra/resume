@@ -6,101 +6,116 @@
     <meta name="keywords" content="live, course, html, css, tag">
     <meta name="description" content="Начало моей новой жизни">
     <title>Новая жизнь</title>
+    <style>
+
+        @media (max-width: 650px)
+
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Даник Искра</h1>
+    <div class="container">
 
-    <img src="photo_2023-09-24_10-18-07.jpg" alt="Здесь была моя фотография" width="500">
-
-    <p>Меня зовут <strong>Даник</strong> и я хочу начать новую <strong>жизнь</strong>.</p>
-    
-    <p><em>Всё начинается с малого.</em></p>
-
-    <hr>
-
-    <h2>Ищи меня тут</h2>
-
-    <a href="https://vk.com/steve_roger" target="_blank">Вконтакте</a>
-    |
-    <a href="https://www.instagram.com/da.iskra/" target="_blank">Instagram</a>
-
-    <hr>
-
-    <h2>Мои хобби</h2>
-
-    <ol type="a">
-        <li>Спать</li>
-        <li>Гулять</li>
-        <li>Играть</li>
-    </ol>
-
-    <hr>
-
-    <h2>Опыт работы</h2>
-    
-    <br>
-    
-    <table width="300">
-
-        <thead>
-
-            <tr>   
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-
-            <tbody>
+        <div class="info">
+            
+            <img src="photo_2023-09-24_10-18-07.jpg" alt="Здесь была моя фотография" class="avatar">
+        
+            
+            <div class="info-text">
+                <h1>Даник Искра</h1>
+                <p>Меня зовут <strong>Даник</strong> и я хочу начать новую <strong>жизнь</strong>.</p>
                 
-                <tr>
-                    <td>ПМК</td>
-                    <td>Столяр</td>
-                    <td>2012-2013</td>
-                </tr>
+                <p><em>Всё начинается с малого.</em></p>
 
-                <tr>
-                    <td>Элефант</td>
-                    <td>Каменщик</td>
-                    <td>2013-2014</td>
-                </tr>
 
-                <tr>
-                    <td>ВипПартнер</td>
-                    <td>Столяр</td>
-                    <td>2018-2023</td>
-                </tr>
+                <h2>Ищи меня тут</h2>
 
-            </tbody>
-
-        </thead>
-
-    </table>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <a href="https://vk.com/steve_roger" target="_blank">Вконтакте</a>
+                |
+                <a href="https://www.instagram.com/da.iskra/" target="_blank">Instagram</a>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+
+            <ol class="list">
+                <li>Спать</li>
+                <li>Гулять</li>
+                <li>Играть</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="massage">Ваше сообщение:</label>
-            <br>
-            <textarea id="massage" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            
+            
+            <table class="table" width="300">
+
+                <thead>
+
+                    <tr>   
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+
+                    <tbody>
+                        
+                        <tr>
+                            <td>ПМК</td>
+                            <td>Столяр</td>
+                            <td>2012-2013</td>
+                        </tr>
+
+                        <tr>
+                            <td>Элефант</td>
+                            <td>Каменщик</td>
+                            <td>2013-2014</td>
+                        </tr>
+
+                        <tr>
+                            <td>ВипПартнер</td>
+                            <td>Столяр</td>
+                            <td>2018-2023</td>
+                        </tr>
+
+                    </tbody>
+
+                </thead>
+
+            </table>
         </div>
 
-        <input type="submit" value="Отправить">
+        <div class="card bg-yellow">
+            
 
-    </form>
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="massage">Ваше сообщение:</label>
+                    <textarea id="massage" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Отправить">
+
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
